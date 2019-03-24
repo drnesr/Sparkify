@@ -23,6 +23,7 @@ The given customers dataset is huge (12GB), thus the standard tools for analysis
 * **Files**
   * [Sparkify.ipynb](https://github.com/drnesr/Sparkify/blob/master/Sparkify.ipynb): The main coding file in jypyter notebook format to work in Udacity workspace.
   * [GeneralizeSparkify.py](https://github.com/drnesr/Sparkify/blob/master/GeneralizeSparkify.py): The main code to allpy the generalize the procedures to any dataset
+  * [Sparkify.html](https://github.com/drnesr/Sparkify/blob/master/Sparkify.html): an HTML file for the jupyter workbook
   * [README.md](https://github.com/drnesr/Sparkify/blob/master/README.md): This file.
   * [saved_user_dataset.CSV](https://github.com/drnesr/Sparkify/tree/master/saved_user_dataset.CSV): The extracted dataset for machine learning in spark format
   * [saved_user_dataset_pd.CSV](https://github.com/drnesr/Sparkify/blob/master/saved_user_dataset_pd.CSV): The extracted dataset for machine learning in csv format
