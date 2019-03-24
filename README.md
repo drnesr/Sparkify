@@ -46,9 +46,11 @@ The given customers dataset is huge (12GB), thus the standard tools for analysis
 Through the file [`GeneralizeSparkify.py`](https://github.com/drnesr/Sparkify/blob/master/GeneralizeSparkify.py), we can do the following:
 
 **First, import Stage#1 command**
+
 ```from GeneralizeSparkify import load_clean_transfer```
 
 **Assume we have new data named `'new_data.json'`, write this command:**
+
 ```load_clean_transfer('new_data.json', save_as='new_dat_extraction')```
 
 This command will:
