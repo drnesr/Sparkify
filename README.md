@@ -57,15 +57,25 @@ This command will:
 3. save the cleaned dataset to the new name as `new_dat_extraction.CSV`
 
 **Next, import Stage#2 commands**
+
 ```from GeneralizeSparkify import load_ml_dataset, get_train_test_features, apply_model```
+
 **2.1. We should load the saved extracted data `new_dat_extraction.CSV`**
+
 ```ml_ds = load_ml_dataset(saved_as='new_dat_extraction.CSV')```
+
 **2.2 Then get the train, test portions and the features names**
+
 ```train, test, features_labels = get_train_test_features(ml_ds)```
+
 ***2.3 Finally, apply an ML model to the data***
+
 ***Either by creating the model:***
+
 ```apply_model(train, test, features_labels, model_name='GBT',save_as='NewGBT.model')```
+
 ***Or by loading existing model***
+
 ```apply_model(train, test, features_labels,model_name='LR', load_from_existing='LogisticRegression.model')```
 
 ### More details
