@@ -48,11 +48,15 @@ Through the file [`GeneralizeSparkify.py`](https://github.com/drnesr/Sparkify/bl
 
 **First, import Stage#1 command**
 
-```from GeneralizeSparkify import load_clean_transfer```
+```python
+from GeneralizeSparkify import load_clean_transfer
+```
 
 **Assume we have new data named `'new_data.json'`, write this command:**
 
-```load_clean_transfer('new_data.json', save_as='new_dat_extraction')```
+```python
+load_clean_transfer('new_data.json', save_as='new_dat_extraction')
+```
 
 This command will:
 1. read the data from the given source,
@@ -61,25 +65,35 @@ This command will:
 
 **Next, import Stage#2 commands**
 
-```from GeneralizeSparkify import load_ml_dataset, get_train_test_features, apply_model```
+```python
+from GeneralizeSparkify import load_ml_dataset, get_train_test_features, apply_model
+```
 
 **2.1. We should load the saved extracted data `new_dat_extraction.CSV`**
 
-```ml_ds = load_ml_dataset(saved_as='new_dat_extraction.CSV')```
+```python
+ml_ds = load_ml_dataset(saved_as='new_dat_extraction.CSV')
+```
 
 **2.2 Then get the train, test portions and the features names**
 
-```train, test, features_labels = get_train_test_features(ml_ds)```
+```python
+train, test, features_labels = get_train_test_features(ml_ds)
+```
 
 ***2.3 Finally, apply an ML model to the data***
 
 ***Either by creating the model:***
 
-```apply_model(train, test, features_labels, model_name='GBT',save_as='NewGBT.model')```
+```python
+apply_model(train, test, features_labels, model_name='GBT',save_as='NewGBT.model')
+```
 
 ***Or by loading existing model***
 
-```apply_model(train, test, features_labels,model_name='LR', load_from_existing='LogisticRegression.model')```
+```python
+apply_model(train, test, features_labels,model_name='LR', load_from_existing='LogisticRegression.model')
+```
 
 ### More details
 Please refer to [This medium post](https://medium.com/@drnesr/dont-let-them-go-818c03d7f09e) for details about this model.
